@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inika:wght@400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <title>Countries</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-content">
+            <h1>Where in the world?</h1>
+            <div class="dark-mode mode">
+                <i class="ri-moon-line"></i>
+                <p class="mode-text">Dark Mode</p>
+            </div>
+            <div class="light-mode mode hidden">
+                <i class="ri-sun-fill"></i>
+                <p class="mode-text">Light Mode</p>
+            </div>
+        </div>
+    </nav>
+
+    <section class="search">
+        <div class="input-search">
+            <i class="ri-search-line search-icon"></i>
+            <input class="search-country" placeholder="Search for a country..." type="text" />
+        </div>
+
+        <div class="dropdown-search">
+            <div class="label">
+                <span>Filter by Region</span>
+                <i class="ri-arrow-down-s-line down-arrow"></i>
+            </div>
+            <div class="dropdown-menu bg hidden">
+                <div class="dropdown-value all">All</div>
+                <div class="dropdown-value africa">Africa</div>
+                <div class="dropdown-value america">Americas</div>
+                <div class="dropdown-value asia">Asia</div>
+                <div class="dropdown-value europe">Europe</div>
+                <div class="dropdown-value oceania">Oceania</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-countries">
+    </section>
+
+</body>
+
+</html>
